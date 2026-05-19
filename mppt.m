@@ -1,6 +1,6 @@
 % Simple Perturb & Observe (P&O) MPPT Simulation
 clear; clc; close all;
-
+%hello
 %% 1. Simulation Parameters
 total_steps = 100;
 delta_V = 0.5;          % Perturbation step size (Volts)
@@ -79,4 +79,4 @@ function Power = mock_solar_panel(V)
     Power = -0.5 * (V - 18)^2 + 100;
     if Power < 0, Power = 0; end % Power cannot be negative
 end
-%
+% hello
